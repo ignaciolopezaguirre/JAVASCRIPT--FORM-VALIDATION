@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09f" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form class="form__container" id="form">
+      <p class="form__title">Crea tu cuenta</p>
+      <div class="form__field">
+        <input
+          type="text"
+          placeholder="Username"
+          class="form__input"
+          id="username"
+          required
+          autocomplete="off"
+        />
+        <small></small>
+      </div>
+
+      <div class="form__field">
+        <input
+          placeholder="password"
+          type="password"
+          class="form__input"
+          id="password"
+          required
+          autocomplete="off"
+        />
+        <small></small>
+      </div>
+
+      <div class="form__field">
+        <input
+          type="email"
+          placeholder="email"
+          class="form__input"
+          required
+          autocomplete="off"
+          id="email"
+        />
+        <small></small>
+      </div>
+
+      <div class="form__field">
+        <input
+          type="tel"
+          placeholder="phone"
+          class="form__input"
+          required
+          autocomplete="off"
+          id="phone"
+        />
+      </div>
+      <input type="submit" value="ingresar" class="btn" />
+    </form>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
