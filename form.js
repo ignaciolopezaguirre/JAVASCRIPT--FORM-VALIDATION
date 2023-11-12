@@ -10,6 +10,8 @@ const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}/; // minimo 8 caracteres maximo 15 , al menos 1 mayuscula , 1 minuscula , 1 digito, no espacio en blanco ,  1 caracter especial
 const PHONE_REGEX = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
 
+// FUNCIONES AUXILIARES PARA VALIDAR LOS INPUTS //
+
 const isEmpty = (value) => {
   value === "";
 };
@@ -45,6 +47,8 @@ const showSuccess = (input) => {
   const successContainer = formField.querySelector("small");
   successContainer.textContent = "";
 };
+
+// FUNCIONES DE CHEQUEO DE DE INPUTS //
 
 const checkUserName = () => {
   let valid = false;
