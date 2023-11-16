@@ -67,7 +67,7 @@ footer {
   background-color: tomato;
 }
 
-.Form__field small {
+.Form__field.error.small {
   color: #dc3545;
   position: relative;
   margin: auto;

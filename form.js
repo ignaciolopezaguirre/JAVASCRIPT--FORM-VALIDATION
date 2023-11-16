@@ -1,5 +1,5 @@
 const form = document.getElementById("form");
-const usernameInput = document.querySelector("#username");
+const usernameInput = document.getElementById("username");
 const passwordInput = document.querySelector("#password");
 const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
@@ -17,7 +17,7 @@ const isEmpty = (value) => {
 };
 
 const isBetween = (length, min, max) => {
-  length > min && length < max;
+  length >= min && length <= max;
 };
 
 const isEmailValid = (email) => {
@@ -36,7 +36,7 @@ const showError = (input, message) => {
   const formField = input.parentElement;
   formField.classList.remove("success");
   formField.classList.add("error");
-  const errorContainer = formField.querySelector("small");
+  const errorContainer = formField.querySelector(".small");
   errorContainer.textContent = message;
 };
 
@@ -44,11 +44,11 @@ const showSuccess = (input) => {
   const formField = input.parentElement;
   formField.classList.remove("error");
   formField.classList.add("success");
-  const successContainer = formField.querySelector("small");
+  const successContainer = formField.querySelector(".small");
   successContainer.textContent = "";
 };
 
-// FUNCIONES DE CHEQUEO DE DE INPUTS //
+// FUNCIONES DE VALIDACION DE DE INPUTS //
 
 const checkUserName = () => {
   let valid = false;
